@@ -5,6 +5,7 @@
 :root {
   --background-start-rgb: 23, 23, 23;
   --background-end-rgb: 23, 23, 23;
+  --foreground-rgb: 255, 255, 255;
 }
 
 body {
@@ -21,4 +22,21 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.paragraph {
+  @apply text-base md:text-xl xl:text-2xl 3xl:text-3xl;
+}
+
+.animated-underline {
+  @apply relative inline-block;
+}
+
+.animated-underline::after {
+  content: "";
+  @apply absolute w-0 h-0.5 -bottom-px left-0 bg-white transition-all duration-300 ease-in-out;
+}
+
+.animated-underline:hover::after {
+  @apply w-full;
 }

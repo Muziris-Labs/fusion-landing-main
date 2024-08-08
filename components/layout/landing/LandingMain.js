@@ -1,9 +1,11 @@
 import Footer from "./footer/Footer";
+import Header from "./header/Header";
 
 export default function LandingMain() {
   return (
-    <div className="flex flex-col w-screen h-fit">
+    <>
+      <Header />
       <Footer />
-    </div>
+    </>
   );
 }

@@ -24,6 +24,41 @@ body {
   }
 }
 
+::-webkit-scrollbar {
+  background: #141414;
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  border: 3px solid #141414;
+}
+
+::-moz-selection {
+  color: #121212;
+  background: #a9a9a9;
+}
+
+::selection {
+  color: #121212;
+  background: #a9a9a9;
+}
+
+.prevent-select {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .paragraph {
   @apply text-base md:text-xl xl:text-2xl 3xl:text-3xl;
 }

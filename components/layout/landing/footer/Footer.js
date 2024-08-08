@@ -7,10 +7,13 @@ import logo from "/public/logo-2d.svg";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col sm:flex-row justify-between px-4 lg:px-12 xl:px-24 2xl:px-28 3xl:px-36 py-12 xl:py-20 3xl:py-24 bg-dark-tertiary">
-      <div className="space-y-14">
+    <footer
+      className="flex flex-col sm:flex-row justify-between px-8 lg:px-12 xl:px-24 2xl:px-28 3xl:px-36 py-12 xl:py-20 3xl:py-24 bg-dark-tertiary"
+      aria-label="Footer"
+    >
+      <section className="space-y-14 mb-0 lg:mb-8 2xl:mb-10 3xl:mb-14 mt-24 sm:mt-0">
         <div>
-          <h2 className="text-7xl 3xl:text-8xl font-bold">Fusion</h2>
+          <h1 className="text-7xl 3xl:text-8xl font-bold">Fusion</h1>
 
           <p className="paragraph font-light max-w-md xl:max-w-lg">
             Zk-based Multi-chain Smart Contract Wallet Powered by Wormhole
@@ -18,13 +21,15 @@ const Footer = () => {
         </div>
 
         <FooterList />
-      </div>
+      </section>
 
-      <Image
-        src={logo}
-        alt="Fusion Logo"
-        className="3xl:max-w-md w-28 sm:w-44 md:w-60 lg:w-80 2xl:w-96 -order-1 md:order-1"
-      />
+      <div className="relative flex-grow -order-1 md:order-1">
+        <Image
+          src={logo}
+          alt="Fusion Logo"
+          className="absolute -top-4 left-0 md:left-auto md:right-0 sm:top-1/2 sm:-translate-y-1/2 w-28 sm:w-44 md:w-80 2xl:w-96 3xl:w-full max-w-md"
+        />
+      </div>
     </footer>
   );
 };

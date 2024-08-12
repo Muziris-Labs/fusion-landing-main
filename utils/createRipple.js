@@ -19,6 +19,7 @@ const createRipple = (event, color = "rgba(0, 0, 0, 0.2)") => {
 };
 
 const style = document.createElement("style");
+
 style.textContent = `
   .ripple-button {
     position: relative;
@@ -39,6 +40,7 @@ style.textContent = `
     }
   }
 `;
+
 document.head.appendChild(style);
 
 export default createRipple;

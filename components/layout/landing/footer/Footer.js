@@ -13,7 +13,7 @@ const Footer = () => {
     >
       <section className="space-y-14 mb-0 lg:mb-8 2xl:mb-10 3xl:mb-14 mt-24 sm:mt-0">
         <div>
-          <h1 className="text-7xl 3xl:text-8xl font-bold">Fusion</h1>
+          <h2 className="text-7xl 3xl:text-8xl font-bold">Fusion</h2>
 
           <p className="paragraph font-light max-w-md xl:max-w-lg">
             Zk-based Multi-chain Smart Contract Wallet Powered by Wormhole

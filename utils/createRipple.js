@@ -16,11 +16,10 @@ const createRipple = (event, color = "rgba(0, 0, 0, 0.2)") => {
   setTimeout(() => {
     ripple.remove();
   }, 600);
-};
 
-const style = document.createElement("style");
+  const style = document.createElement("style");
 
-style.textContent = `
+  style.textContent = `
   .ripple-button {
     position: relative;
     overflow: hidden;
@@ -41,6 +40,7 @@ style.textContent = `
   }
 `;
 
-document.head.appendChild(style);
+  document.head.appendChild(style);
+};
 
 export default createRipple;

@@ -3,7 +3,7 @@ import React from "react";
 const OnChainHeading = () => {
   return (
     <div className="space-y-6 relative z-10">
-      <h2 className="text-7xl 3xl:text-8xl font-bold">
+      <h2 className="text-5xl lg:text-6xl xl:text-7xl 3xl:text-8xl font-bold">
         Next Stop, <br /> On-Chain Bank
       </h2>
 

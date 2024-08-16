@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="m-4 sm:m-8 p-8 md:p-10 lg:p-12 xl:p-16 3xl:p-20 space-y-32 lg:space-y-48 3xl:space-y-64 bg-dark-tertiary rounded-3xl header">
+    <header className="m-4 sm:m-8 p-8 md:p-10 lg:p-12 xl:p-16 3xl:p-20 space-y-32 lg:space-y-48 3xl:space-y-64 bg-dark-tertiary rounded-3xl header 2xl:m-auto 2xl:my-8 max-w-screen-2xl">
       <Logo />
 
       <section className="md:space-y-8">

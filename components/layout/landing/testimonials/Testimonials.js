@@ -16,9 +16,10 @@ const Testimonials = () => {
         className="object-contain object-left py-14"
       />
 
-      <TestimonialHeading />
-
-      <TestimonialList />
+      <div>
+        <TestimonialHeading />
+        <TestimonialList />
+      </div>
     </section>
   );
 };

@@ -61,8 +61,8 @@ const BentoContainer = () => {
         </div>
       </div>
 
-      <div className="col-span-4 sm:col-span-8 bg-dark-tertiary p-16 rounded-3xl">
-        <div className="space-y-4 z-10 relative">
+      <div className="col-span-4 sm:col-span-8 bg-dark-tertiary rounded-3xl flex flex-col justify-between items-end overflow-hidden">
+        <div className="space-y-4 z-10 relative px-6 lg:px-10 xl:px-12 3xl:px-16 mt-6 lg:mt-12 xl:mt-14 3xl:mt-20 self-start">
           <h2 className="text-xl sm:text-2xl md:text-3xl xl:text-4xl 3xl:text-5xl font-bold">
             Multi-chain Freedom
           </h2>

@@ -4,7 +4,7 @@ import BentoHeading from "./BentoHeading";
 
 const Bento = () => {
   return (
-    <section className="space-y-20 my-16">
+    <section className="space-y-20 pt-10 lg:py-16">
       <BentoHeading />
 
       <BentoContainer />

@@ -8,7 +8,7 @@ const BentoHeading = () => {
       </h2>
 
       <p className="paragraph">
-        Track and manage your assets across all supported chains.
+        The first multi-chain smart wallet with zk and privacy
       </p>
     </div>
   );

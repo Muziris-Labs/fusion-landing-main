@@ -31,7 +31,7 @@ const FooterList = () => {
   return (
     <div className="space-y-3">
       <nav aria-label="Social Media Links">
-        <ul className="flex space-x-11 paragraph font-light">
+        <ul className="flex space-x-11 font-light">
           {socialList.map((item) => (
             <li key={item.name} className="animated-underline px-0.5">
               <Link className="animated-underline" href={item.url}>
@@ -43,7 +43,7 @@ const FooterList = () => {
       </nav>
 
       <nav aria-label="Footer Links">
-        <ul className="flex space-x-11 paragraph text-3xl font-light">
+        <ul className="flex space-x-11 font-light">
           {footerList.map((item, index) => (
             <li key={index} className="animated-underline px-1">
               <Link href={item.url}>{item.name}</Link>

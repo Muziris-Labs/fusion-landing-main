@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     background-size: 66%;
     background-position-x: 132%;
-    background-position-y: 100%;
+    background-position-y: 70%;
   }
 }
 
@@ -20,12 +20,6 @@
 
 @media (min-width: 1536px) {
   .header {
-    background-size: 68%;
-  }
-}
-
-@media (min-width: 1920px) {
-  .header {
-    background-size: 70%;
+    background-size: 74%;
   }
 }

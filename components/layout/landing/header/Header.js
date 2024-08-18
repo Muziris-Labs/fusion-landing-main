@@ -9,7 +9,7 @@ import Image from "next/image";
 const Header = () => {
   return (
     <header className="p-4 sm:p-8 2xl:h-screen max-w-screen-2xl 2xl:m-auto 2xl:py-8">
-      <div className="h-full p-8 md:p-10 lg:p-12 xl:p-16 3xl:p-20 space-y-32 lg:space-y-48 3xl:space-y-64 bg-dark-tertiary rounded-3xl header 2xl:flex 2xl:flex-col 2xl:justify-between">
+      <div className="h-full p-8 md:p-10 lg:p-12 xl:p-16 3xl:p-20 space-y-32 lg:space-y-48 3xl:space-y-64 bg-dark-tertiary header rounded-3xl 2xl:flex 2xl:flex-col 2xl:justify-between">
         <Logo />
 
         <section className="md:space-y-8">

@@ -140,7 +140,7 @@ export default function MultiChain() {
     autoClick();
     setCanvasSize();
     window.addEventListener("resize", setCanvasSize, false);
-  }, [container, window]);
+  }, [container]);
 
   return (
     <div

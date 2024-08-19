@@ -17,7 +17,7 @@ const Testnet = () => {
       </div>
 
       <RippleLink
-        location="/#"
+        location="https://app.getfusion.tech"
         color="#000"
         className="bg-[#D9D9D9] font-semibold capitalize block"
       >

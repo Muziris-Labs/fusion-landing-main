@@ -4,26 +4,26 @@ import React from "react";
 const socialList = [
   {
     name: "Twitter",
-    url: "#",
+    url: "https://x.com/fusionwallet",
   },
   {
     name: "Github",
-    url: "#",
+    url: "https://github.com/Muziris-Labs",
   },
   {
     name: "Discord",
-    url: "#",
+    url: "https://discord.gg/H2rG8nddeD",
   },
 ];
 
 const footerList = [
   {
     name: "Testnet",
-    url: "#",
+    url: "https://app.getfusion.tech",
   },
   {
     name: "Waitlist",
-    url: "#",
+    url: "https://tally.so/r/w2L7v9",
   },
 ];
 

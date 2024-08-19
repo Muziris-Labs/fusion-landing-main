@@ -82,3 +82,31 @@ body {
   opacity: 0.3;
   z-index: 0;
 }
+
+.circle {
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  border-radius: 0%;
+  margin: 0 4px;
+}
+
+.circle-1 {
+  background-image: url("/landing/bento/op-logo.svg");
+  background-repeat: no-repeat;
+}
+
+.circle-2 {
+  background-image: url("/landing/bento/arb-logo.svg");
+  background-repeat: no-repeat;
+}
+
+.circle-3 {
+  background-image: url("/landing/bento/base-logo.svg");
+  background-repeat: no-repeat;
+}
+
+.circle-4 {
+  background-image: url("/landing/bento/celo-logo.svg");
+  background-repeat: no-repeat;
+}

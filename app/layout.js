@@ -9,7 +9,7 @@ const outfit = Outfit({
 
 export const metadata = {
   title: "Fusion",
-  description: "Your very own smart wallet",
+  description: "Zk-based Multi-chain Smart Contract Wallet Powered by Wormhole",
 };
 
 export default function RootLayout({ children }) {

@@ -17,7 +17,7 @@ const Waitlist = () => {
       </div>
 
       <RippleLink
-        location="/#"
+        location="https://tally.so/r/w2L7v9"
         border
         color="#D9D9D9"
         rippleColor="rgba(217,217,217,0.2)"

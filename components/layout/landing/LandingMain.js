@@ -1,3 +1,4 @@
+import FeatureList from "./features/FeatureList";
 import HeaderNew from "./header/HeaderNew";
 import Navbar from "./Navbar";
 
@@ -6,6 +7,7 @@ export default function LandingMain() {
     <>
       <Navbar />
       <HeaderNew />
+      <FeatureList />
     </>
   );
 }

@@ -8,10 +8,16 @@ export default function FeatureBox({
   image,
   alt,
   extended = false,
+  comingSoon = false,
 }) {
   return (
     (!extended && (
-      <div className="w-full bg-white rounded-3xl flex-1 flex flex-col px-10 py-10">
+      <div className="w-full bg-white rounded-3xl flex-1 flex flex-col px-10 py-10 relative overflow-hidden">
+        {comingSoon && (
+          <div className="bg-blue-400 w-fit px-3 py-1 text-white rounded-full absolute top-4 right-4 text-xs">
+            Coming Soon
+          </div>
+        )}
         <div className="text-3xl font-regular relative">
           {line1} <br /> {line2} <br />
           <p className="absolute"> {line3}</p>

@@ -51,6 +51,7 @@ const Features = [
       "Trade different cryptocurrencies as easily as you'd exchange pocket change.",
     image: "/landing/features/tap.png",
     alt: "Tap Image",
+    comingSoon: "true",
   },
   {
     line1: "Hardware Wallet",
@@ -60,6 +61,7 @@ const Features = [
       "Connect your hardware wallet and manage your fusion wallet for extra security.",
     image: "/landing/features/drive.png",
     alt: "Drive Image",
+    comingSoon: "true",
   },
   {
     line1: "Always Know",
@@ -68,12 +70,13 @@ const Features = [
     desc: "Get real-time updates on your crypto's value.",
     image: "/landing/features/data.png",
     alt: "Data Image",
+    comingSoon: "true",
   },
 ];
 
 export default function FeatureList() {
   return (
-    <div className="w-full flex flex-col px-52 py-20 gap-10 bg-[#e4e4e4]">
+    <div className="w-full flex flex-col px-52 py-20 pb-10 gap-10 bg-[#f3f3f3]">
       <h3 className="text-5xl font-medium">
         All You Need, <br /> Right Where You Need It
       </h3>
@@ -88,6 +91,7 @@ export default function FeatureList() {
             image={feature.image}
             alt={feature.alt}
             extended={feature.extended}
+            comingSoon={feature.comingSoon}
           />
         ))}
       </div>

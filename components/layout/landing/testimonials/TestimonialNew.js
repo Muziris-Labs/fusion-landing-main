@@ -18,11 +18,14 @@ export default function TestimonialNew() {
         </div>
         <div className="flex flex-col gap-5">
           <p className="w-96 font-light">
-            As a DeFi enthusiast, I've tried dozens of wallets. Fusion Wallet is
-            a game-changer. One interface for all my chains, and I never worry
-            about privacy. It's like they read my mind!
+            It just kind of makes using a web3 wallet really easy. I think
+            that's a super important thing in this space where things can get a
+            bit complicated. I've talked in the past about how it's not normal
+            to inscribe 24 words into metal and hide that somewhere. Fusion
+            Wallet which makes the user experience so good, is one way that we
+            are going to onboard new users to web3.
           </p>
-          <p className="text-lg font-medium">Baer, DAOplomats</p>
+          <p className="text-lg font-medium">Richard, ChainLink Labs</p>
         </div>
       </div>
       <div className="absolute bg-[#f3f3f3] w-full bottom-0 h-[50%]"></div>

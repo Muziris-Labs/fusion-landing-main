@@ -1,11 +1,24 @@
 import RippleLink from "@/components/ui/buttons/RippleLink";
 import Devices from "./Devices";
 import SmallFeatures from "./SmallFeatures";
+import Image from "next/image";
 
 export default function HeaderNew() {
   return (
     <>
       <div className="w-full flex items-center justify-center flex-col mt-52">
+        <div className="bg-black/80 rounded-full py-1.5 px-4 mb-5 text-white text-sm font-light flex items-center">
+          Fusion is live on
+          <Image
+            src="/landing/header/fraxtal.png"
+            width={20}
+            height={20}
+            alt="Fraxtal"
+            className="mr-1 ml-2"
+          />
+          Fraxtal Mainnet
+        </div>
+
         <h1 className="text-5xl font-semibold opacity-80">
           The Wallet Others Wish They Were
         </h1>

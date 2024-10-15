@@ -1,4 +1,6 @@
+import Audit from "./audit/Audit";
 import FeatureList from "./features/FeatureList";
+import FooterNew from "./footer/FooterNew";
 import HeaderNew from "./header/HeaderNew";
 import Navbar from "./Navbar";
 import PartnersNew from "./partners/PartnersNew";
@@ -14,6 +16,8 @@ export default function LandingMain() {
       <Socials />
       <PartnersNew />
       <TestimonialNew />
+      <Audit />
+      <FooterNew />
     </>
   );
 }

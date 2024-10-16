@@ -33,16 +33,16 @@ export default function FeatureBox({
           {line1} <br /> {line2} <br />
           <p className="absolute"> {line3}</p>
         </div>
-        <div className="w-full flex items-center justify-end my-5 relative h-[180px]">
+        <div className="w-full flex items-center justify-center md:justify-end my-5 relative h-[180px]">
           <Image
             src={image}
             width={380}
             height={250}
             alt={alt}
-            className="absolute"
+            className="md:absolute md:w-[380px] w-[180px]"
           />
         </div>
-        <p className="text-xl text-gray-600 pr-[50%]">{desc}</p>
+        <p className="text-xl text-gray-600 pr-7 md:pr-[50%]">{desc}</p>
       </div>
     )
   );

@@ -13,14 +13,14 @@ export default function Devices() {
         width={900}
         height={900}
         alt="Devices"
-        className=""
+        className="md:block hidden"
       />
       <Image
         src="/landing/header/MobileView.png"
         width={330}
         height={330}
         alt="Devices"
-        className="-ml-52"
+        className="lg:-ml-52 md:hidden lg:block block"
       />
 
       <div className="w-full absolute bottom-0 bg-[url('/landing/header/PatternBg.svg')] bg-cover bg-center bg-no-repeat h-[296px] -z-10"></div>

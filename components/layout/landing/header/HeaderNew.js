@@ -19,10 +19,10 @@ export default function HeaderNew() {
           Fraxtal Mainnet
         </div>
 
-        <h1 className="text-5xl font-semibold opacity-80">
+        <h1 className="lg:text-5xl font-semibold opacity-80 text-center text-4xl">
           The Wallet Others Wish They Were
         </h1>
-        <h3 className="text-lg mt-2 text-gray-500 font-light">
+        <h3 className="lg:text-lg text-sm mt-2 text-gray-500 font-light text-center">
           Your journey to seamless, secure, and private multichain management
           starts here.
         </h3>

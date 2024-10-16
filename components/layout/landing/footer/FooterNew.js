@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function FooterNew() {
   return (
-    <div className="px-52 relative bg-[#f3f3f3] w-full flex flex-col items-center justify-center py-10 gap-10">
-      <div className="flex items-center justify-between w-full">
-        <div className="flex items-center gap-1">
+    <div className="2xl:px-52 xl:px-20 px-5 sm:px-10  relative bg-[#f3f3f3] w-full flex flex-col items-center justify-center py-10 gap-10">
+      <div className="flex items-center justify-between w-full gap-10 md:flex-row flex-col">
+        <div className="flex items-center gap-1 md:flex-row flex-col">
           {" "}
           <Image
             src="/FusionLogo.svg"
@@ -15,7 +15,7 @@ export default function FooterNew() {
           />
           <h1 className="text-2xl font-semibold">Fusion</h1>
         </div>
-        <div className="flex items-center gap-5 font-light">
+        <div className="flex items-center gap-5 font-light md:flex-row flex-col">
           <p>Making Crypto Clear and Simple</p>
           <RippleLink
             location="https://app.getfusion.tech"

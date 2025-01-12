@@ -57,10 +57,10 @@ const StickyScrollSection = () => {
   return (
     <div className="min-h-screen bg-[#f3f3f3]">
       <div ref={containerRef} className="relative min-h-screen">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-2 gap-20">
+        <div className="2xl:px-52 xl:px-20 px-5 sm:px-10 mx-auto">
+          <div className="flex lg:flex-row flex-col 2xl:gap-20">
             {/* Sticky section */}
-            <div className="sticky top-[200px] h-[540px]">
+            <div className="lg:sticky top-[250px] lg:h-[520px]">
               <div className="rounded-lg p-8 pl-0 h-full flex flex-col">
                 <h2 className="text-4xl font-bold mb-6">How it works</h2>
                 <p className="text-gray-600 text-2xl">
@@ -84,7 +84,7 @@ const StickyScrollSection = () => {
                   <motion.div
                     key={index}
                     style={{ opacity }}
-                    className="rounded-lg p-8"
+                    className="rounded-lg py-8 lg:pl-16"
                   >
                     <div className="flex flex-col gap-y-4 bg-white shadow-sm p-7 rounded-3xl">
                       <div className="my-2 h-32 w-32 bg-gray-50 rounded-xl flex items-center justify-center">

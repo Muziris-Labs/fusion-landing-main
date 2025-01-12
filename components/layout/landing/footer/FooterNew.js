@@ -1,9 +1,10 @@
+import { BackgroundBeams } from "@/components/ui/background-beams";
 import RippleLink from "@/components/ui/buttons/RippleLink";
 import Image from "next/image";
 
 export default function FooterNew() {
   return (
-    <div className="2xl:px-52 xl:px-20 px-5 sm:px-10  relative bg-[#f3f3f3] w-full flex flex-col items-center justify-center py-10 gap-10">
+    <div className="2xl:px-52 xl:px-20 px-5 sm:px-10  relative bg-[#f3f3f3] w-full flex flex-col items-center justify-center py-10 pb-0 gap-10">
       <div className="flex items-center justify-between w-full gap-10 md:flex-row flex-col">
         <div className="flex items-center gap-1 md:flex-row flex-col">
           {" "}
@@ -15,7 +16,7 @@ export default function FooterNew() {
           />
           <h1 className="text-2xl font-semibold">Fusion</h1>
         </div>
-        <div className="flex items-center gap-5 font-light md:flex-row flex-col">
+        <div className="flex items-center gap-5 font-light md:flex-row flex-col z-10">
           <p>Making Crypto Clear and Simple</p>
           <RippleLink
             location="https://app.getfusion.tech"
@@ -49,6 +50,17 @@ export default function FooterNew() {
           alt="discord"
         />
       </div>
+      <div className="w-full bg-[#f3f3f3] lg:h-[230px] overflow-hidden relative">
+        <Image
+          src="/Fusion3dRender.png"
+          width={700}
+          height={50}
+          alt="Fusion 3D Render"
+          className="absolute bg-[#f3f3f3] -translate-x-1/2 left-1/2"
+        />
+      </div>
+
+      <BackgroundBeams className="opacity-50" />
     </div>
   );
 }

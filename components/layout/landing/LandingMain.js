@@ -4,8 +4,8 @@ import FooterNew from "./footer/FooterNew";
 import HeaderNew from "./header/HeaderNew";
 import Navbar from "./Navbar";
 import PartnersNew from "./partners/PartnersNew";
-import Socials from "./social/Socials";
 import TestimonialNew from "./testimonials/TestimonialNew";
+import { Works } from "./works/WorksMain";
 
 export default function LandingMain() {
   return (
@@ -13,7 +13,8 @@ export default function LandingMain() {
       <Navbar />
       <HeaderNew />
       <FeatureList />
-      <Socials />
+      <Works />
+      {/* <Socials /> */}
       <PartnersNew />
       <TestimonialNew />
       <Audit />

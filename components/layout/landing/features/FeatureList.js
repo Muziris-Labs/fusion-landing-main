@@ -76,8 +76,8 @@ const Features = [
 
 export default function FeatureList() {
   return (
-    <div className="w-full flex flex-col 2xl:px-52 xl:px-20 px-5 sm:px-10 py-20 pb-10 gap-10 bg-[#f3f3f3]">
-      <h3 className="text-3xl sm:text-4xl md:text-5xl font-medium">
+    <div className="w-full flex flex-col 2xl:px-52 xl:px-20 px-5 sm:px-10 py-20 gap-10 bg-[#f3f3f3]">
+      <h3 className="text-3xl sm:text-4xl md:text-5xl mb-5 font-medium">
         All You Need, <br /> Right Where You Need It
       </h3>
       <div className="w-full md:grid xl:grid-cols-3 space-y-10 md:space-y-0 lg:grid-cols-2 md:gap-10">

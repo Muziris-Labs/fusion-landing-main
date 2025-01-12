@@ -22,7 +22,7 @@ export default function FeatureBox({
           {line1} <br /> {line2} <br />
           <p className="absolute"> {line3}</p>
         </div>
-        <div className="w-full flex items-center justify-center my-5">
+        <div className="w-full flex items-center justify-center my-5 h-[180px]">
           <Image src={image} width={180} height={180} alt={alt} />
         </div>
         <p className="text-xl text-gray-600 pr-7">{desc}</p>

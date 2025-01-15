@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Devices() {
   return (
     <div
-      className="w-full relative flex items-end justify-center mt-24 "
+      className="w-full relative flex items-end justify-center"
       style={{
         backgroundSize: "",
       }}

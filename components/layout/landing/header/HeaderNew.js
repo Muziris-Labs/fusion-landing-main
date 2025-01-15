@@ -4,6 +4,28 @@ import SmallFeatures from "./SmallFeatures";
 import Image from "next/image";
 import { Monitor, Smartphone } from "lucide-react";
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
+
+const chains = [
+  {
+    id: 1,
+    name: "Optimism",
+    designation: "op.getfusion.tech",
+    image: "/landing/header/chains/op-logo.svg",
+  },
+  {
+    id: 2,
+    name: "Base",
+    designation: "base.getfusion.tech",
+    image: "/landing/header/chains/base-logo.svg",
+  },
+  {
+    id: 3,
+    name: "Fraxtal",
+    designation: "fraxtal.getfusion.tech",
+    image: "/landing/header/chains/frax-logo.png",
+  },
+];
 
 export default function HeaderNew() {
   return (
@@ -45,6 +67,10 @@ export default function HeaderNew() {
           >
             Join Waitlist <Smartphone size={16} className="ml-2" />
           </RippleLink>
+        </div>
+
+        <div className="flex flex-row items-center justify-center -ml-3 mt-5 mb-5 w-full">
+          <AnimatedTooltip items={chains} />
         </div>
 
         <Devices />

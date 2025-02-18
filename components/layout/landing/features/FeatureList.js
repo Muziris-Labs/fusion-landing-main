@@ -29,8 +29,7 @@ const Features = [
     line1: "Universal Crypto",
     line2: "Management",
     line3: null,
-    desc:
-      "Access and manage assets on Superchain, and many more — all from a single app.",
+    desc: "Access and manage assets on Superchain, and many more — all from a single app.",
     image: "/landing/features/blocks.png",
     alt: "Universal Image",
   },
@@ -47,8 +46,7 @@ const Features = [
     line1: "Swap Coins with",
     line2: "One Tap",
     line3: null,
-    desc:
-      "Trade different cryptocurrencies as easily as you'd exchange pocket change.",
+    desc: "Trade different cryptocurrencies as easily as you'd exchange pocket change.",
     image: "/landing/features/tap.png",
     alt: "Tap Image",
     comingSoon: "true",
@@ -57,8 +55,7 @@ const Features = [
     line1: "Hardware Wallet",
     line2: "Integration",
     line3: null,
-    desc:
-      "Connect your hardware wallet and manage your fusion wallet for extra security.",
+    desc: "Connect your hardware wallet and manage your fusion wallet for extra security.",
     image: "/landing/features/drive.png",
     alt: "Drive Image",
     comingSoon: "true",
@@ -76,7 +73,10 @@ const Features = [
 
 export default function FeatureList() {
   return (
-    <div className="w-full flex flex-col 2xl:px-52 xl:px-20 px-5 sm:px-10 py-20 gap-10 bg-[#f3f3f3]">
+    <div
+      className="w-full flex flex-col 2xl:px-52 xl:px-20 px-5 sm:px-10 py-20 gap-10 bg-[#f3f3f3]"
+      id="features"
+    >
       <h3 className="text-3xl sm:text-4xl md:text-5xl mb-5 font-medium">
         All You Need, <br /> Right Where You Need It
       </h3>

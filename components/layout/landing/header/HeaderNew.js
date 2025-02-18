@@ -25,6 +25,12 @@ const chains = [
     designation: "fraxtal.getfusion.tech",
     image: "/landing/header/chains/frax-logo.png",
   },
+  {
+    id: 4,
+    name: "Unichain",
+    designation: "uni.getfusion.tech",
+    image: "/landing/header/chains/unichain-logo.jpg",
+  },
 ];
 
 export default function HeaderNew() {
@@ -40,7 +46,15 @@ export default function HeaderNew() {
             alt="Fraxtal"
             className="mr-1 ml-2"
           />
-          Fraxtal Mainnet
+          Fraxtal and
+          <Image
+            src="/landing/header/chains/unichain-logo.jpg"
+            width={20}
+            height={20}
+            alt="Unichain"
+            className="mr-1 ml-2 rounded-full"
+          />
+          Unichain
         </div>
 
         <h1 className="lg:text-5xl font-semibold opacity-80 text-center text-4xl">

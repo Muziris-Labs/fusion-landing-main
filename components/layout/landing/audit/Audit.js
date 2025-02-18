@@ -15,7 +15,7 @@ export default function Audit() {
         </div>
 
         <RippleLink
-          location="#"
+          location="https://docs.google.com/document/d/1rI3y9fsGDS-3OymH4iHEJA6NBGSF4s0D0L2CO3xlGLQ/edit?usp=sharing"
           color="#000"
           className="bg-white/80 font-light text-sm px-12 py-3"
           rippleColor="#fff"

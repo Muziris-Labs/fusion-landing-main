@@ -16,10 +16,12 @@ function RippleLink({
   className,
   fullWidth,
   rippleColor,
+  target,
 }) {
   return (
     <Link
       href={location ? location : "#"}
+      target={target ? target : "_blank"}
       className={`ripple-button items-center py-2.5 px-8 hover:scale-105 active:scale-100 transition-all ease-in duration-150 text-center text-base 3xl:text-lg ${
         border ? "border-2" : ""
       } ${className}`}

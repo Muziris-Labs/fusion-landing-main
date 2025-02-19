@@ -22,6 +22,7 @@ export default function FooterNew() {
           <p>Making Crypto Clear and Simple</p>
           <RippleLink
             location="https://app.getfusion.tech"
+            target={"_self"}
             color="#fff"
             className="bg-black/80 font-light text-sm px-12 py-3"
           >

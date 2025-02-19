@@ -68,6 +68,7 @@ export default function HeaderNew() {
         <div className="flex items-center gap-5 mt-10">
           <RippleLink
             location="https://app.getfusion.tech"
+            target={"_self"}
             color="#fff"
             className="bg-black/80 font-light flex items-center text-sm px-12 py-3"
           >
@@ -75,7 +76,7 @@ export default function HeaderNew() {
           </RippleLink>
 
           <RippleLink
-            location="https://app.getfusion.tech"
+            location="https://app.youform.com/forms/zvrnq6vl"
             color="#000"
             className="bg-gray-300/80 font-light flex items-center text-sm px-12 py-3"
           >

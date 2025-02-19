@@ -1,43 +1,42 @@
 "use client";
-import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 // Simple throttle function implementation without 'this' references
-function throttle(func, delay) {
-  let lastCall = 0;
-  let timeoutId = null;
+// function throttle(func, delay) {
+//   let lastCall = 0;
+//   let timeoutId = null;
 
-  const throttledFunction = function (...args) {
-    const now = Date.now();
+//   const throttledFunction = function (...args) {
+//     const now = Date.now();
 
-    if (now - lastCall >= delay) {
-      lastCall = now;
-      func(...args);
-    } else {
-      // Clear any existing timeout
-      if (timeoutId) {
-        clearTimeout(timeoutId);
-      }
+//     if (now - lastCall >= delay) {
+//       lastCall = now;
+//       func(...args);
+//     } else {
+//       // Clear any existing timeout
+//       if (timeoutId) {
+//         clearTimeout(timeoutId);
+//       }
 
-      // Set a new timeout
-      timeoutId = setTimeout(() => {
-        lastCall = Date.now();
-        func(...args);
-      }, delay - (now - lastCall));
-    }
-  };
+//       // Set a new timeout
+//       timeoutId = setTimeout(() => {
+//         lastCall = Date.now();
+//         func(...args);
+//       }, delay - (now - lastCall));
+//     }
+//   };
 
-  // Add a cancel method
-  throttledFunction.cancel = function () {
-    if (timeoutId) {
-      clearTimeout(timeoutId);
-      timeoutId = null;
-    }
-  };
+//   // Add a cancel method
+//   throttledFunction.cancel = function () {
+//     if (timeoutId) {
+//       clearTimeout(timeoutId);
+//       timeoutId = null;
+//     }
+//   };
 
-  return throttledFunction;
-}
+//   return throttledFunction;
+// }
 
 const scrollToSection = (sectionId) => (e) => {
   e.preventDefault();
@@ -53,41 +52,42 @@ const scrollToSection = (sectionId) => (e) => {
 };
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
+  // const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    // Create a throttled scroll handler
-    const handleScroll = throttle(() => {
-      const isScrolled = window.scrollY > 0;
-      setScrolled(isScrolled);
-    }, 100);
+  // useEffect(() => {
+  //   // Create a throttled scroll handler
+  //   const handleScroll = throttle(() => {
+  //     const isScrolled = window.scrollY > 0;
+  //     setScrolled(isScrolled);
+  //   }, 100);
 
-    // Add scroll event listener
-    window.addEventListener("scroll", handleScroll);
+  //   // Add scroll event listener
+  //   window.addEventListener("scroll", handleScroll);
 
-    // Initial check
-    handleScroll();
+  //   // Initial check
+  //   handleScroll();
 
-    // Cleanup
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      handleScroll.cancel();
-    };
-  }, []);
+  //   // Cleanup
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //     handleScroll.cancel();
+  //   };
+  // }, []);
 
   return (
     <nav className="w-full fixed top-0 flex items-center justify-center z-20">
       <div
-        className={`flex items-center justify-between xs:border w-full xs:rounded-full px-6 xs:py-3 py-5 xs:mt-5 transition-all duration-200 ${
-          scrolled
-            ? "bg-white/50 backdrop-blur-lg border-black"
-            : "bg-transparent border-transparent"
+        className={`flex items-center justify-between xs:border xs:rounded-full px-6 xs:py-3 py-5 xs:mt-5 transition-all duration-200 w-[435px] bg-white/50 backdrop-blur-lg border-black  ${
+          // scrolled
+          //   ? "bg-white/50 backdrop-blur-lg border-black"
+          //   : "bg-transparent border-transparent"
+          ``
         }`}
-        style={{
-          width: scrolled ? "400px" : "750px",
-          maxWidth: "100%",
-          willChange: "transform, background-color, width",
-        }}
+        // style={{
+        //   width: scrolled ? "435px" : "750px",
+        //   maxWidth: "100%",
+        //   willChange: "transform, background-color, width",
+        // }}
       >
         <div className="flex items-center">
           <Image

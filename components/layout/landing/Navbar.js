@@ -77,7 +77,7 @@ export default function Navbar() {
   return (
     <nav className="w-full fixed top-0 flex items-center justify-center z-20">
       <div
-        className={`flex items-center justify-between xs:border xs:rounded-full px-6 xs:py-3 py-5 xs:mt-5 transition-all duration-200 w-[435px] bg-white/50 backdrop-blur-lg border-black  ${
+        className={`flex items-center justify-between xs:border xs:rounded-full px-6 xs:py-3 py-5 xs:mt-5 w-[435px] bg-white/50 backdrop-blur-lg border-black  ${
           // scrolled
           //   ? "bg-white/50 backdrop-blur-lg border-black"
           //   : "bg-transparent border-transparent"
